@@ -1,0 +1,53 @@
+.container{
+    width:300px;
+    background:black;
+    margin: auto;
+    margin-top: 100px;
+    border: 5px solid grey;
+    padding-bottom: 15px;
+}
+.red, .yellow, .green{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 50%;
+    background: grey;
+}
+.red{
+    animation: stop 20s infinite;
+    background: red;
+}
+.yellow{
+    animation: wait 20s infinite;
+    background: yellow;
+}
+.green{
+    animation: go 20s infinite;
+    background: lime;
+}
+@keyframes stop{
+    0% {background: red;}
+    19% {background: red;}
+    20% {background: gray;}
+    59% {background: gray;}
+    60% {background: red;}
+    100% {background: red;}
+}
+@keyframes wait{
+    0% {background:gray;}
+    19% {background: gray;}
+    20% {background: yellow;}
+    29% {background: yellow;}
+    30% {background: gray;}
+    49% {background: gray;}
+    50% {background: yellow;}
+    59% {background: yellow;}
+    60% {background: gray;}
+}
+@keyframes go{
+    29% {background: grey;}
+    30% {background: lime;}
+    49% {background: lime;}
+    50% {background: gray;}
+}
